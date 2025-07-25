@@ -1,0 +1,67 @@
+.Widget{
+    width: 100%;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.Widget_Card {
+    width: 47.5%;
+    background-color: var(--bg-undecimo);
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    padding: 10px;
+}
+
+.Widget_Header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Widget_Header h4 {
+    font-size: 1.1em;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-primario);
+}
+
+
+.Widget_Header_Circulo {
+    height: 40px;
+    width: 40px;
+    background-color: var(--background-dark-body);
+    color: var(--text-decimo);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Widget_Header_Circulo_Icono {
+    font-size: 25px;
+}
+
+.Widget_Card span {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Barlow Condensed", sans-serif;
+    color: var(--text-terciario);
+}
+
+.Widget_Card h6 {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Barlow Condensed", sans-serif;
+    color: var(--text-cuaternario);
+}

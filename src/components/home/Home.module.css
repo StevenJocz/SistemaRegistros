@@ -1,0 +1,140 @@
+.Home {
+    width: 100%;
+    padding: 40px 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.Home h1 {
+    font-size: 3.7em;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-secundario);
+    position: relative;
+    z-index: 10;
+}
+
+.Home h1 span {
+    background: var(--Gradient, linear-gradient(100deg, var(--text-secundario) 37.82%, var(--text-terciario) 87.12%));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Home p {
+    font-size: 1.7em;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-secundario);
+}
+
+.Home_Nav {
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.Home_Nav ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.Home_Nav ul li {
+    font-size: 22px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-negro);
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    border-bottom: 3px solid #00000000;
+    margin-right: 40px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.Home_Nav ul li.Activo  {
+    border-bottom: 3px solid var(--border-primario);
+}
+
+.Home_Nav ul li:hover {
+    border-bottom: 3px solid var(--border-primario);
+}
+
+.Home_Nav ul li .Icono {
+    margin-right: 10px;
+}
+
+.Home_Nav_Content {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.Home_Nav_Content h2 {
+    font-size: 2.5em;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-secundario);
+    margin-bottom: 30px;
+}
+
+.Home_Nav_Card_Content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.Home_Nav_Content_SinCertificado {
+    margin-left: 10px;
+}
+
+.Home_Nav_Content_SinCertificado h3{
+    font-size: 2em;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--text-secundario);
+}
+
+.Home_Nav_Content_SinCertificado p {
+    font-size: 1.5em;
+}
+
+
+.Linea{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    opacity: 0.3;
+}
+
+.svgImagen {
+    width: 100%;
+    height: 150vh;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    animation: roatation 120s infinite linear ;
+    -webkit-animation: roatation 120s infinite linear ;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    opacity: 0.3;
+}

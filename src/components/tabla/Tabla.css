@@ -1,0 +1,95 @@
+.Tabla {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.Table_Acciones {
+    width: 150px;
+}
+
+.Boton_Editar {
+    width: 50px;
+    font-size: 15px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    background-color: var(--btn-bg-boton);
+    color: var(--text-primario);
+    padding: 5px;
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 8px;
+}
+
+.Boton_Grupos {
+    width: 50px;
+    font-size: 15px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    background-color: var( --bg-amarillo);
+    color: var(--text-primario);
+    padding: 5px;
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 8px;
+}
+
+.Tabla_Imagen {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 25%;
+}
+
+.Table_Total {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+.Table_Total_P {
+    font-size: 1.2em;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--text-undecimo);
+}
+
+.Table_Estado {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+}
+
+.Table_Estado.Activo{
+    background-color: var(--bg-sexto);
+}
+
+.Table_Estado.NoActivo{
+    background-color: rgb(202, 14, 1);
+}

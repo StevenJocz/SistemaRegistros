@@ -1,0 +1,98 @@
+.NavPerfil_Texto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.NavPerfil_Texto h2{
+    font-size: 18px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--text-negro);
+}
+
+
+.NavPerfil_Texto_Icono {
+    color: var(--text-negro);
+    
+}
+
+.NavPerfil_Texto_Imagen {
+    width: 60px;
+}
+
+.NavPerfil_Contect {
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-negro);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.NavPerfil_Contect_Menu {
+    width: 200px;
+    position: absolute;
+    top: 80px;
+    right: 180px;
+    background-color:  var(--bg-blanco);
+    border-radius: 0.7em;
+    -webkit-border-radius: 0.7em;
+    -moz-border-radius: 0.7em;
+    -ms-border-radius: 0.7em;
+    -o-border-radius: 0.7em;
+    border: 1px solid var(--border-claro);
+    padding: 10px;
+    z-index: 1001;
+}
+
+
+.NavPerfil_Contect_Menu ul {
+    display: block;
+}
+
+.NavPerfil_Contect_Menu ul a{
+    text-decoration: none;
+}
+
+.NavPerfil_Contect_Menu ul li {
+    font-size: 17px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--text-negro);
+    width: 100%;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+
+.Nav ul li:hover{
+    color: var(--text-terciario);
+}
+
+.NavPerfil.dark .NavPerfil_Contect_Menu{
+    background-color:  var(--background-dark-body);
+}
+
+.NavPerfil.dark .NavPerfil_Texto h2 {
+    color: var(--text-octavo);  /* Cambiar color del texto en el perfil */
+}
+
+.NavPerfil.dark .NavPerfil_Texto_Icono {
+    color: var(--text-octavo);
+}

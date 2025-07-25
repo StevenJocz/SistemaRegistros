@@ -1,0 +1,183 @@
+
+.Admin_Widget_Bottom {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.Admin_Widget_Bottom_Left {
+    width: 40%;
+    background-color: var(--bg-undecimo);
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    padding: 10px;
+}
+
+.Admin_Widget_Bottom_Left h2 {
+    font-size: 1.1em;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-primario);
+}
+
+.Admin_Widget_Bottom_Right {
+    width: 60%;
+    background-color: var(--bg-undecimo);
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    padding: 10px;
+}
+
+.Admin_Widget_Bottom_Right h2 {
+    font-size: 1.1em;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-primario);
+    margin-bottom: 10px;
+}
+
+.AlertaTrue {
+    width: 100%;
+    height: 40px;
+    background-color: var(--bg-primario);
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secundario);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 30px;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+
+
+.Add  {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-negro);
+    z-index: 1000;
+}
+
+.Add_Content {
+    width: 40%;
+    max-height: 80vh;
+    background-color: var(--background-dark-body);
+    border-radius: 0.7em;
+    -webkit-border-radius: 0.7em;
+    -moz-border-radius: 0.7em;
+    -ms-border-radius: 0.7em;
+    -o-border-radius: 0.7em;
+    border: 1px solid var(--border-claro);
+    padding: 10px;
+    z-index: 1001;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.Add_Content::-webkit-scrollbar {
+    width: 1px;
+}
+
+.Add_Content::-webkit-scrollbar-thumb {
+    background-color:  #ffffff;
+}
+
+.Add_Content::-webkit-scrollbar-track {
+    background-color: var(--background-dark);
+}
+
+.Add_Content_Encabezado {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Add_Content_Encabezado h2 {
+    font-size: 1.5em;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-undecimo);
+}
+
+.Add_Content_Encabezado_Icono {
+    font-size: 30px;
+    color: var(--text-undecimo);
+    cursor: pointer;
+}
+
+
+.AddText_informacion {
+    font-size: 12px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    color: var(--text-primario);
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.Formulario_Boton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Formulario_Boton button {
+    width: 150px;
+    font-size: 19px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    background-color: var(--btn-bg-boton);
+    color: var(--text-primario);
+    padding: 10px;
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.Formulario_Errores {
+    width: 100%;
+    font-size: 10px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    
+}
+
+.Error {
+    color: red !important;
+    font-size: 9px;
+    font-style: italic !important;
+}

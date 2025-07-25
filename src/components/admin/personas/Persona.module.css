@@ -1,0 +1,17 @@
+.Personas h2 {
+    font-size: 1.5em;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--text-undecimo);
+}
+
+.Personas p {
+    font-size: 1.2em;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--text-undecimo);
+    text-align: left;
+    margin-top: 10px;
+}

@@ -1,0 +1,84 @@
+.Nav {
+    width: 100%;
+    max-width: 120rem;
+    height: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.Nav a {
+    text-decoration: none;
+}
+
+.Nav h3 {
+    font-size: 35px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background: var(--Gradient, linear-gradient(100deg,  var(--text-secundario) 37.82%, var(--text-terciario) 87.12%));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.Nav ul li {
+    font-size: 22px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--text-negro);
+    width: 100%;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    margin-left: 2.5em;
+}
+
+.Nav ul li:hover{
+    color: var(--text-terciario);
+}
+
+.Idioma {
+    margin-left: 3%;
+    
+}
+
+.Nav_Perfil {
+    width: 20%;
+    margin-right: 5%;
+}
+
+
+
+/* Tema Oscuro */
+.Nav.dark {
+    background-color: var(--background-dark);
+}
+
+.Nav.dark h3 {
+    background: var(--Gradient, linear-gradient(100deg,  var(--text-septimo) 37.82%, var(--text-noveno) 87.12%));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Nav.dark ul li {
+    color: var(--text-octavo); 
+    font-weight: 400;
+}
+
+.Nav.dark ul li:hover {
+    color: var(--text-septimo); 
+}
+
+

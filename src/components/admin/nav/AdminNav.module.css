@@ -1,0 +1,40 @@
+.AdminNav {
+    width: 100%;
+    list-style: none;
+}
+
+.AdminNav h4 {
+    font-size: 14px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--text-noveno);
+    margin-bottom: 20px;
+}
+
+.AdminNav a {
+    text-decoration: none;
+}
+
+.AdminNav li {
+    font-size: 20px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--text-undecimo);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.AdminNav li:hover {
+    color: var(--text-terciario);
+}
+
+
+.AdminNav li.Seleccionado {
+    color: var(--text-terciario);
+    font-weight: 600;
+}

@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Tbl_Usuario_Sistema {
+  id_usuario_sistema Int     @id @default(autoincrement())
+  id_usuario         Int?
+  s_correo           String  @unique
+  s_clave            String?
+}
+
+model Tbl_Personas {
+  id_personas        Int       @id @default(autoincrement())
+  s_nombres          String?
+  s_apellido_uno     String?
+  s_apellido_dos     String?
+  id_tipo_documento  Int?
+  s_documento        String?
+  d_fecha_nacimiento DateTime? @db.Timetz(6)
+  in_edad            Int?
+  id_pais            Int?
+  s_residencia       String?
+  d_fecha_registro   DateTime? @db.Timetz(6)
+  s_telefono         String?
+
+  @@map("Tbl_Personas")
+}
+
+model Tbl_Registros_Ingreso {
+  id_registro          Int       @id(map: "RegistrosIngreso_pkey") @default(autoincrement()) @map("id_registro")
+  d_fecha_hora_ingreso DateTime  @db.Timestamp(6)
+  d_fecha_hora_salida  DateTime? @db.Timestamp(6)
+  s_observaciones      String?
+  id_persona           Int
+
+  @@map("Tbl_Registros_Ingreso")
+}
+
+model Tbl_Tipo_Documentos {
+  id_tipo_documentos Int    @id @default(autoincrement())
+  s_nombre           String @db.Text
+
+  @@map("Tbl_Tipo_Documentos")
+}
+
+model Tbl_Paises {
+  id_pais  Int    @id @default(autoincrement())
+  s_nombre String @db.Text
+
+  @@map("Tbl_Paises")
+}
